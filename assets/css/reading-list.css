@@ -1,0 +1,99 @@
+/**
+ * Reading List Plugin Styles
+ *
+ * Styles for the frontend reading list display.
+ */
+
+.reading-list {
+    margin: 20px 0;
+}
+
+.reading-list-books {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reading-list-book {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.reading-list-book-cover {
+    flex-shrink: 0;
+}
+
+.reading-list-book-cover img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reading-list-book-details {
+    flex: 1;
+}
+
+.reading-list-book-title {
+    margin: 0 0 10px 0;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.reading-list-book-author {
+    margin: 0 0 8px 0;
+    font-style: italic;
+    color: #666;
+}
+
+.reading-list-book-rating {
+    margin: 0 0 8px 0;
+    color: #f5a623;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.reading-list-book-date {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.reading-list-book-notes {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.reading-list-empty {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .reading-list-book {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reading-list-book-cover {
+        margin-bottom: 15px;
+    }
+
+    .reading-list-book-details {
+        width: 100%;
+    }
+}
