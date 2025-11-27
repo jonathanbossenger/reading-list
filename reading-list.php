@@ -403,6 +403,14 @@ function reading_list_shortcode( $atts ) {
 add_shortcode( 'reading_list', 'reading_list_shortcode' );
 
 /**
+ * Register the Reading List block.
+ */
+function reading_list_register_block() {
+    register_block_type( READING_LIST_PLUGIN_DIR . 'blocks/reading-list' );
+}
+add_action( 'init', 'reading_list_register_block' );
+
+/**
  * Enqueue frontend styles.
  */
 function reading_list_enqueue_styles() {
@@ -414,6 +422,19 @@ function reading_list_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'reading_list_enqueue_styles' );
+
+/**
+ * Enqueue block editor styles.
+ */
+function reading_list_enqueue_block_editor_styles() {
+    wp_enqueue_style(
+        'reading-list-block-editor-styles',
+        READING_LIST_PLUGIN_URL . 'assets/css/reading-list.css',
+        array(),
+        READING_LIST_VERSION
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'reading_list_enqueue_block_editor_styles' );
 
 /**
  * Flush rewrite rules on activation.

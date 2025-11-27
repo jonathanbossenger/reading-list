@@ -10,6 +10,7 @@ A WordPress plugin to manage a list of books you've read on your WordPress site.
 - **Notes**: Add personal notes or reviews using the standard WordPress editor.
 - **Admin List View**: Custom columns in the admin showing author, date read, and rating.
 - **Sortable Columns**: Sort your book list by author, date read, or rating.
+- **Gutenberg Block**: Add a Reading List block to display your books in the block editor.
 - **Frontend Shortcode**: Display your reading list on any page or post.
 - **Responsive Design**: Mobile-friendly display with clean, modern styling.
 
@@ -31,6 +32,20 @@ A WordPress plugin to manage a list of books you've read on your WordPress site.
 6. Click **Publish** to save the book.
 
 ### Displaying Your Reading List
+
+You can display your reading list using either the Gutenberg block or the classic shortcode.
+
+#### Using the Block (Recommended)
+
+1. Edit any page or post using the block editor.
+2. Click the **+** button to add a new block.
+3. Search for "Reading List" and select the block.
+4. Use the block settings in the sidebar to configure:
+   - **Number of books**: How many books to display (0 for all)
+   - **Order by**: Sort by date read, title, or rating
+   - **Order**: Ascending or descending
+
+#### Using the Shortcode
 
 Use the `[reading_list]` shortcode on any page or post to display your reading list.
 
