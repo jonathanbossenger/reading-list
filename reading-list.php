@@ -5,7 +5,7 @@
  * Description: A WordPress plugin to manage a list of books you've read.
  * Version: 1.0.0
  * Author: Jonathan Bossenger
- * Author URI: https://developer.developer.developer.developer.developer.developer.developer.developer.developer.developer
+ * Author URI: https://github.com/jonathanbossenger
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: reading-list
